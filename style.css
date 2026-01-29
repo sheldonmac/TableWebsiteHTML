@@ -146,6 +146,7 @@ header > h1 {
 }
 img {
     border-radius: 22px;
+    width: 100%;
 }
 .S2Box {
     display: flex;
@@ -222,4 +223,29 @@ footer {
 .footer-content-right > h1 {
     font-weight: 600;
     font-size: 48px;
+}
+.shopS1 {
+    background-image: url(./Images/Table2.png);
+    background-size: 100%;
+    border-radius: 22px;
+    display: flex;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1450px;
+    justify-content: space-between;
+    height: 650px;
+}
+.shopS1Right {
+    align-self: flex-start;
+    font-size: 54px;
+    padding: 55px;
+}
+.shopS1Left {
+    align-self: flex-end;
+    padding: 55px;
+    width: 35%;
+}
+.shopS1Left > p {
+    font-weight: 250;
+    font-size: 32px;
 }
