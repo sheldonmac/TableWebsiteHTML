@@ -25,9 +25,11 @@ header {
     justify-content: space-between;
     max-width: 1450px;
 }
-header > h1 {
+.TableLogo {
     font-weight: 600;
     font-size: 48px;
+    color: black;
+    text-decoration: none;
 }
 .footer-content-left > h1 {
     font-weight: 600;
@@ -61,10 +63,10 @@ header > h1 {
     align-items: flex-start;
 }
 .homeS1 > .s1Text {
-    flex-grow: 1;
     margin-left: 12px;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 2;
 }
 .homeS1 > .s1Text > .s1Disc > h1 {
     font-weight: 600;
@@ -84,7 +86,7 @@ header > h1 {
 }
 .purchasePrompt {
     display: flex;
-    width: 100%;
+    width: 90%;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -100,12 +102,10 @@ header > h1 {
     color: var(--sub-heading-color);
 }
 .buyBtn {
-    margin-left: 18px;
     padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     border-radius: 24px;
     border: 1px solid black;
 }
@@ -180,6 +180,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 45%;
 }
 .homeS3 > img {
     object-fit: cover;
@@ -237,8 +238,11 @@ footer {
 }
 .shopS1Right {
     align-self: flex-start;
-    font-size: 54px;
     padding: 55px;
+}
+.shopS1Right > h1 {
+    font-size: 64px;
+    font-weight: 600;
 }
 .shopS1Left {
     align-self: flex-end;
@@ -248,4 +252,80 @@ footer {
 .shopS1Left > p {
     font-weight: 250;
     font-size: 32px;
+    font-style: italic;
+}
+.shopS3 {
+    width: 90%;
+    max-width: 1450px;
+}
+.shopS3 > h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--sub-heading-color);
+}
+.shopS3CardContainer {
+    margin-top: 48px;
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+}
+
+.shopS3Card {
+    width: 40%;
+    border: 0.5px solid var(--sub-heading-color);
+    box-shadow: 4px 4px 30px lightgray;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.shopS3Card > img {
+    mask-image: linear-gradient(to bottom, black 0, transparent 100%);
+}
+.shopS3Card > h1 {
+    margin: -12px 32px 12px 32px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.shopS3Card > p {
+    margin: 0px 32px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--sub-heading-color);
+}
+.shopS3Card > .purchasePrompt {
+    margin: 32px;
+}
+.studentDiscount {
+    width: 90%;
+    max-width: 1450px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    border: 0.5px solid var(--sub-heading-color);
+    border-radius: 22px;
+}
+.studentDiscountText {
+    margin: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.studentTop > h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.studentTop > p {
+    color: var(--sub-heading-color);
+    font-size: 20px;
+}
+.onlyAtTable {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.onlyAtTable > p {
+    color: var(--sub-heading-color);
+    font-size: 20px;
+    margin-right: 8px;
 }
